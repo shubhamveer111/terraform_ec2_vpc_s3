@@ -12,17 +12,13 @@ pipeline {
                 echo 'Terraform Initialization is in process'
                 sh 'terraform --version'
                 }
-           }
-    }     
-        stages {
+           }   
         stage('Terraform Plan') {
             steps {
                 echo 'Terraform Planning is in process'
                 sh 'terraform plan'
                 }
-            }
-        }    
-        stages {
+        }
         stage('Terraform Apply') {
             steps {
                 echo 'Terraform Apply'
@@ -30,7 +26,7 @@ pipeline {
 
                 }
             }
-         }    
+    }
 }
 
 
