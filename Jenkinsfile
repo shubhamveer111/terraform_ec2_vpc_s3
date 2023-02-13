@@ -7,12 +7,18 @@ pipeline {
     agent any
 
     stages {
-        stage('Terraform Initialization') {
+        stage('Terraform Version ') {
             steps {
                 echo 'Terraform Initialization is in process'
                 sh 'terraform --version'
                 }
-           }   
+           }
+         stage('Terraform Initialization') {
+            steps {
+                echo 'Terraform Initialization is in process'
+                sh 'terraform init'
+                }
+           }    
         stage('Terraform Plan') {
             steps {
                 echo 'Terraform Planning is in process'
