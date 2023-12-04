@@ -1,7 +1,7 @@
 provider "aws" {
   region = "us-east-1"
-  access_key = "AKIASDEFVBW3VRA4CKUY"
-  secret_key = "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"
+  access_key = "AKIASDEFVBW3XFHS5D3U"
+  secret_key = "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"
 }
 
 data "aws_key_pair" "AWSDevpos" {
